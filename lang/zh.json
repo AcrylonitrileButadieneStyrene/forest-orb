@@ -856,7 +856,9 @@
     "account": {
       "login": {
         "errors": {
-          "invalidLogin": "用户名或密码不正确！"
+          "invalidLogin": "用户名或密码不正确！",
+          "invalidCredentials": "Specified username or password is empty or contains invalid characters.",
+          "invalidCaptcha": "Please complete the Captcha."
         }
       },
       "register": {
@@ -864,7 +866,9 @@
           "confirmPasswordMismatch": "两次输入的密码不一致！",
           "invalidCredentials": "用户名和密码为空或包含不支持的字符！",
           "emailTaken": "您输入的邮箱地址已被占用！",
-          "usernameTaken": "您输入的用户名已被占用！"
+          "usernameTaken": "您输入的用户名已被占用！",
+          "invalidCaptcha": "Please complete the Captcha.",
+          "ipBlocked": "You have registered too many accounts."
         }
       },
       "password": {

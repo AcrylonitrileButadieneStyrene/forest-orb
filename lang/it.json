@@ -856,7 +856,9 @@
     "account": {
       "login": {
         "errors": {
-          "invalidLogin": "Il nome utente e/o password sono sbaglati."
+          "invalidLogin": "Il nome utente e/o password sono sbaglati.",
+          "invalidCredentials": "Specified username or password is empty or contains invalid characters.",
+          "invalidCaptcha": "Please complete the Captcha."
         }
       },
       "register": {
@@ -864,7 +866,9 @@
           "confirmPasswordMismatch": "Le password inserite non combaciano.",
           "invalidCredentials": "Il nome utente o la password inseriti sono già usati o contengono caratteri invalidi.",
           "emailTaken": "L'email inserita è già in uso.",
-          "usernameTaken": "Il nome utente iserito è già in uso."
+          "usernameTaken": "Il nome utente iserito è già in uso.",
+          "invalidCaptcha": "Please complete the Captcha.",
+          "ipBlocked": "You have registered too many accounts."
         }
       },
       "password": {

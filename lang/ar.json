@@ -856,7 +856,9 @@
     "account": {
       "login": {
         "errors": {
-          "invalidLogin": "اسم المستخدم أو كلمة السر غير صحيحة."
+          "invalidLogin": "اسم المستخدم أو كلمة السر غير صحيحة.",
+          "invalidCredentials": "Specified username or password is empty or contains invalid characters.",
+          "invalidCaptcha": "Please complete the Captcha."
         }
       },
       "register": {
@@ -864,7 +866,9 @@
           "confirmPasswordMismatch": "كلمات السر المحددة لا تتطابق.",
           "invalidCredentials": "اسم المستخدم أو كلمة المرور المحددة فارغة أو تحتوي على أحرف غير صالحة.",
           "emailTaken": "عنوان البريد الإلكتروني المحدد قيد الاستخدام بالفعل.",
-          "usernameTaken": "اسم المستخدم المحدد قيد الاستخدام بالفعل."
+          "usernameTaken": "اسم المستخدم المحدد قيد الاستخدام بالفعل.",
+          "invalidCaptcha": "Please complete the Captcha.",
+          "ipBlocked": "You have registered too many accounts."
         }
       },
       "password": {

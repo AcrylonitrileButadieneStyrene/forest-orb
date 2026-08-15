@@ -1,6 +1,13 @@
 let loggedIn = false;
 
 function initAccountControls() {
+  const baseErrors = {
+    "invalid username": "invalidCredentials",
+    "invalid password": "invalidCredentials",
+    "missing captcha": "invalidCaptcha",
+    "invalid captcha": "invalidCaptcha",
+  };
+
   document.getElementById('loginButton').onclick = () => {
     document.getElementById('loginErrorRow').classList.add('hidden');
     openModal('loginModal');
@@ -24,8 +31,12 @@ function initAccountControls() {
     authApiPost('login', new URLSearchParams(new FormData(form)), 'application/x-www-form-urlencoded')
       .then(response => {
         if (!response.ok) {
-          response.text().then(_ => {
-            document.getElementById('loginError').innerHTML = getMassagedLabel(localizedMessages.account.login.errors.invalidLogin, true);
+          response.text().then(error => {
+            document.getElementById('loginError').innerHTML = getLabelForAccountError("register", {
+	      ...baseErrors,
+	      "unknown user": "invalidLogin",
+	      "incorrect password": "invalidLogin",
+	    }, error, "invalidLogin");
             document.getElementById('loginErrorRow').classList.remove('hidden');
           });
           turnstile.reset();
@@ -55,7 +66,11 @@ function initAccountControls() {
       .then(response => {
         if (!response.ok) {
           response.text().then(error => {
-            document.getElementById('registerError').innerHTML = getMassagedLabel(localizedMessages.account.register.errors[error.replace('\n', '') === 'user exists' ? 'usernameTaken' : 'invalidCredentials'], true);
+            document.getElementById('registerError').innerHTML = getLabelForAccountError("register", {
+	      ...baseErrors,
+	      "username taken": "usernameTaken",
+	      "too many accounts from ip": "ipBlocked",
+	    }, error, "invalidCredentials");
             document.getElementById('registerErrorRow').classList.remove('hidden');
           });
           turnstile.reset();
@@ -103,6 +118,10 @@ function initAccountControls() {
       .catch(err => console.error(err));
     return false;
   };
+}
+
+function getLabelForAccountError(baseKey, knownReasons, errorText, defaultKey) {
+  return getMassagedLabel(localizedMessages.account[baseKey].errors[knownReasons[errorText] || defaultKey], true)
 }
 
 function initAccountSettingsModal() {

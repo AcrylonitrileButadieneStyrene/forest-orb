@@ -856,7 +856,9 @@
     "account": {
       "login": {
         "errors": {
-          "invalidLogin": "아이디 혹은 비밀번호가 올바르지 않습니다"
+          "invalidLogin": "아이디 혹은 비밀번호가 올바르지 않습니다",
+          "invalidCredentials": "Specified username or password is empty or contains invalid characters.",
+          "invalidCaptcha": "Please complete the Captcha."
         }
       },
       "register": {
@@ -864,7 +866,9 @@
           "confirmPasswordMismatch": "확인용 비밀번호가 일치하지 않습니다",
           "invalidCredentials": "닉네임이나 비밀번호에 공백 또는 사용할 수 없는 문자가 있습니다",
           "emailTaken": "해당 이메일은 이미 사용하고 있습니다",
-          "usernameTaken": "해당 아이디는 이미 사용하고 있습니다"
+          "usernameTaken": "해당 아이디는 이미 사용하고 있습니다",
+          "invalidCaptcha": "Please complete the Captcha.",
+          "ipBlocked": "You have registered too many accounts."
         }
       },
       "password": {

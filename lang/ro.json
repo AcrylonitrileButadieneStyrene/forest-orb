@@ -856,7 +856,9 @@
     "account": {
       "login": {
         "errors": {
-          "invalidLogin": "Username sau parolă incorecte."
+          "invalidLogin": "Username sau parolă incorecte.",
+          "invalidCredentials": "Specified username or password is empty or contains invalid characters.",
+          "invalidCaptcha": "Please complete the Captcha."
         }
       },
       "register": {
@@ -864,7 +866,9 @@
           "confirmPasswordMismatch": "Parolele specificate nu se potrivesc.",
           "invalidCredentials": "Username/Parolă specificată este goală sau conține caractere invalide.",
           "emailTaken": "Adresa de e-mail specificată este deja folosită.",
-          "usernameTaken": "Username-ul specificat este deja folosit."
+          "usernameTaken": "Username-ul specificat este deja folosit.",
+          "invalidCaptcha": "Please complete the Captcha.",
+          "ipBlocked": "You have registered too many accounts."
         }
       },
       "password": {

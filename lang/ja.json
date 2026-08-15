@@ -856,7 +856,9 @@
     "account": {
       "login": {
         "errors": {
-          "invalidLogin": "ユーザー名 または パスワードが 間違っています。"
+          "invalidLogin": "ユーザー名 または パスワードが 間違っています。",
+          "invalidCredentials": "Specified username or password is empty or contains invalid characters.",
+          "invalidCaptcha": "Please complete the Captcha."
         }
       },
       "register": {
@@ -864,7 +866,9 @@
           "confirmPasswordMismatch": "パスワードが一致しません。",
           "invalidCredentials": "指定されたユーザー名またはパスワードが空、もしくは無効な文字が含まれています。",
           "emailTaken": "このメールアドレスは既に使用されています。",
-          "usernameTaken": "このユーザー名は既に使用されています。"
+          "usernameTaken": "このユーザー名は既に使用されています。",
+          "invalidCaptcha": "Please complete the Captcha.",
+          "ipBlocked": "You have registered too many accounts."
         }
       },
       "password": {

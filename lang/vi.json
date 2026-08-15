@@ -856,7 +856,9 @@
     "account": {
       "login": {
         "errors": {
-          "invalidLogin": "Sai tên người dùng hoặc mật khẩu."
+          "invalidLogin": "Sai tên người dùng hoặc mật khẩu.",
+          "invalidCredentials": "Specified username or password is empty or contains invalid characters.",
+          "invalidCaptcha": "Please complete the Captcha."
         }
       },
       "register": {
@@ -864,7 +866,9 @@
           "confirmPasswordMismatch": "Mật khẩu không trùng khớp.",
           "invalidCredentials": "Tên người dùng hoặc mật khẩu trống hoặc chứa ký tự không hợp lệ.",
           "emailTaken": "Địa chỉ email đã được sử dụng.",
-          "usernameTaken": "Tên người dùng đã được sử dụng."
+          "usernameTaken": "Tên người dùng đã được sử dụng.",
+          "invalidCaptcha": "Please complete the Captcha.",
+          "ipBlocked": "You have registered too many accounts."
         }
       },
       "password": {

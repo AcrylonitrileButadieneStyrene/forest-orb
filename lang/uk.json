@@ -856,7 +856,9 @@
     "account": {
       "login": {
         "errors": {
-          "invalidLogin": "Неправильне ім'я користувача або пароль."
+          "invalidLogin": "Неправильне ім'я користувача або пароль.",
+          "invalidCredentials": "Specified username or password is empty or contains invalid characters.",
+          "invalidCaptcha": "Please complete the Captcha."
         }
       },
       "register": {
@@ -864,7 +866,9 @@
           "confirmPasswordMismatch": "Паролі не співпадають.",
           "invalidCredentials": "Вказане ім'я користувача або пароль порожні або містять неприпустимі символи.",
           "emailTaken": "Вказана адреса електронної пошти вже використовується.",
-          "usernameTaken": "Вказане ім'я користувача вже зайняте."
+          "usernameTaken": "Вказане ім'я користувача вже зайняте.",
+          "invalidCaptcha": "Please complete the Captcha.",
+          "ipBlocked": "You have registered too many accounts."
         }
       },
       "password": {

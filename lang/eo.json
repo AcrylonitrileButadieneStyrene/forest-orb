@@ -856,7 +856,9 @@
     "account": {
       "login": {
         "errors": {
-          "invalidLogin": "Uzantnomo aŭ pasvorto estas malĝusta."
+          "invalidLogin": "Uzantnomo aŭ pasvorto estas malĝusta.",
+          "invalidCredentials": "Specified username or password is empty or contains invalid characters.",
+          "invalidCaptcha": "Please complete the Captcha."
         }
       },
       "register": {
@@ -864,7 +866,9 @@
           "confirmPasswordMismatch": "La entajpitaj pasvortoj ne estas la samaj.",
           "invalidCredentials": "Uzantnomo aŭ pasvorto entajpitaj estas malplenaj aŭ havas nevalidajn signojn.",
           "emailTaken": "La entajpita retadreso jam estas uzata.",
-          "usernameTaken": "La entajpita uzantnomo jam estas uzata."
+          "usernameTaken": "La entajpita uzantnomo jam estas uzata.",
+          "invalidCaptcha": "Please complete the Captcha.",
+          "ipBlocked": "You have registered too many accounts."
         }
       },
       "password": {

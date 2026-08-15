@@ -856,7 +856,9 @@
     "account": {
       "login": {
         "errors": {
-          "invalidLogin": "Логин или пароль не верны."
+          "invalidLogin": "Логин или пароль не верны.",
+          "invalidCredentials": "Specified username or password is empty or contains invalid characters.",
+          "invalidCaptcha": "Please complete the Captcha."
         }
       },
       "register": {
@@ -864,7 +866,9 @@
           "confirmPasswordMismatch": "Пароли не совпадают.",
           "invalidCredentials": "Указанные логин и пароль пустые или содержат недопустимые символы.",
           "emailTaken": "Данный e-mail уже используется.",
-          "usernameTaken": "Данный логин уже используется."
+          "usernameTaken": "Данный логин уже используется.",
+          "invalidCaptcha": "Please complete the Captcha.",
+          "ipBlocked": "You have registered too many accounts."
         }
       },
       "password": {

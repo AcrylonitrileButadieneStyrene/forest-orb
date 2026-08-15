@@ -856,7 +856,9 @@
     "account": {
       "login": {
         "errors": {
-          "invalidLogin": "Kullanıcı adı ya da şifre yanlış."
+          "invalidLogin": "Kullanıcı adı ya da şifre yanlış.",
+          "invalidCredentials": "Specified username or password is empty or contains invalid characters.",
+          "invalidCaptcha": "Please complete the Captcha."
         }
       },
       "register": {
@@ -864,7 +866,9 @@
           "confirmPasswordMismatch": "Bahsedilen şifreler uyuşmuyor.",
           "invalidCredentials": "Bahsedilen kullanıcı adı ya da şifre boş ya da geçersiz karakter içeriyor.",
           "emailTaken": "Bahsedilen E-posta zaten kayıtlı.",
-          "usernameTaken": "Bahsedilen kullanıcı adı zaten kullanılıyor."
+          "usernameTaken": "Bahsedilen kullanıcı adı zaten kullanılıyor.",
+          "invalidCaptcha": "Please complete the Captcha.",
+          "ipBlocked": "You have registered too many accounts."
         }
       },
       "password": {

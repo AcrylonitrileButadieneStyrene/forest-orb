@@ -856,7 +856,9 @@
     "account": {
       "login": {
         "errors": {
-          "invalidLogin": "Login lub hasło są nieprawidłowe."
+          "invalidLogin": "Login lub hasło są nieprawidłowe.",
+          "invalidCredentials": "Specified username or password is empty or contains invalid characters.",
+          "invalidCaptcha": "Please complete the Captcha."
         }
       },
       "register": {
@@ -864,7 +866,9 @@
           "confirmPasswordMismatch": "Podane hasła nie zgadzają się.",
           "invalidCredentials": "Login lub hasło są puste lub zawierają niedozwolone znaki.",
           "emailTaken": "Ten email jest już w użyciu.",
-          "usernameTaken": "Ta nazwa jest już w użyciu."
+          "usernameTaken": "Ta nazwa jest już w użyciu.",
+          "invalidCaptcha": "Please complete the Captcha.",
+          "ipBlocked": "You have registered too many accounts."
         }
       },
       "password": {
